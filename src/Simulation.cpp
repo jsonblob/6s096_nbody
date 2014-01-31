@@ -43,7 +43,7 @@ namespace nbody {
   }
 
   void Simulation::saveRun() const {
-    std::ofstream output{ _name };
+    std::ofstream output{ _name, std::ofstream::app };
     _system->writeState( output );
   }
 

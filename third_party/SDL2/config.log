@@ -30,8 +30,8 @@ Kernel configured for up to 4 processors.
 Processor type: i486 (Intel 80486)
 Processors active: 0 1 2 3
 Primary memory available: 8.00 gigabytes
-Default processor set: 99 tasks, 576 threads, 4 processors
-Load average: 0.75, Mach factor: 3.24
+Default processor set: 102 tasks, 598 threads, 4 processors
+Load average: 0.35, Mach factor: 3.64
 /bin/machine           = unknown
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
@@ -929,7 +929,7 @@ configure:16558: checking for _strrev
 configure:16558: gcc -o conftest -g -O2 -Iinclude -I/Users/Jason/Desktop/6.s096/final/6s096_nbody/third_party/SDL2/include   -Iinclude -I/Users/Jason/Desktop/6.s096/final/6s096_nbody/third_party/SDL2/include    conftest.c  >&5
 Undefined symbols for architecture x86_64:
   "__strrev", referenced from:
-      _main in cc1xdxdA.o
+      _main in ccE7hZaP.o
 ld: symbol(s) not found for architecture x86_64
 collect2: error: ld returned 1 exit status
 configure:16558: $? = 1
@@ -1037,7 +1037,7 @@ configure:16558: checking for _strupr
 configure:16558: gcc -o conftest -g -O2 -Iinclude -I/Users/Jason/Desktop/6.s096/final/6s096_nbody/third_party/SDL2/include   -Iinclude -I/Users/Jason/Desktop/6.s096/final/6s096_nbody/third_party/SDL2/include    conftest.c  >&5
 Undefined symbols for architecture x86_64:
   "__strupr", referenced from:
-      _main in ccBgtXpU.o
+      _main in cckrvVZm.o
 ld: symbol(s) not found for architecture x86_64
 collect2: error: ld returned 1 exit status
 configure:16558: $? = 1
@@ -1145,7 +1145,7 @@ configure:16558: checking for _strlwr
 configure:16558: gcc -o conftest -g -O2 -Iinclude -I/Users/Jason/Desktop/6.s096/final/6s096_nbody/third_party/SDL2/include   -Iinclude -I/Users/Jason/Desktop/6.s096/final/6s096_nbody/third_party/SDL2/include    conftest.c  >&5
 Undefined symbols for architecture x86_64:
   "__strlwr", referenced from:
-      _main in ccv63WyA.o
+      _main in ccdnk89p.o
 ld: symbol(s) not found for architecture x86_64
 collect2: error: ld returned 1 exit status
 configure:16558: $? = 1
@@ -1268,7 +1268,7 @@ configure:16558: checking for itoa
 configure:16558: gcc -o conftest -g -O2 -Iinclude -I/Users/Jason/Desktop/6.s096/final/6s096_nbody/third_party/SDL2/include   -Iinclude -I/Users/Jason/Desktop/6.s096/final/6s096_nbody/third_party/SDL2/include    conftest.c  >&5
 Undefined symbols for architecture x86_64:
   "_itoa", referenced from:
-      _main in ccMQhav0.o
+      _main in cclgyYzg.o
 ld: symbol(s) not found for architecture x86_64
 collect2: error: ld returned 1 exit status
 configure:16558: $? = 1
@@ -1379,7 +1379,7 @@ configure:16558: checking for _ltoa
 configure:16558: gcc -o conftest -g -O2 -Iinclude -I/Users/Jason/Desktop/6.s096/final/6s096_nbody/third_party/SDL2/include   -Iinclude -I/Users/Jason/Desktop/6.s096/final/6s096_nbody/third_party/SDL2/include    conftest.c  >&5
 Undefined symbols for architecture x86_64:
   "__ltoa", referenced from:
-      _main in ccnNX3Ui.o
+      _main in cc7er7Zy.o
 ld: symbol(s) not found for architecture x86_64
 collect2: error: ld returned 1 exit status
 configure:16558: $? = 1
@@ -1490,7 +1490,7 @@ configure:16558: checking for _uitoa
 configure:16558: gcc -o conftest -g -O2 -Iinclude -I/Users/Jason/Desktop/6.s096/final/6s096_nbody/third_party/SDL2/include   -Iinclude -I/Users/Jason/Desktop/6.s096/final/6s096_nbody/third_party/SDL2/include    conftest.c  >&5
 Undefined symbols for architecture x86_64:
   "__uitoa", referenced from:
-      _main in cc6kF1lr.o
+      _main in ccrVI7eO.o
 ld: symbol(s) not found for architecture x86_64
 collect2: error: ld returned 1 exit status
 configure:16558: $? = 1
@@ -1601,7 +1601,7 @@ configure:16558: checking for _ultoa
 configure:16558: gcc -o conftest -g -O2 -Iinclude -I/Users/Jason/Desktop/6.s096/final/6s096_nbody/third_party/SDL2/include   -Iinclude -I/Users/Jason/Desktop/6.s096/final/6s096_nbody/third_party/SDL2/include    conftest.c  >&5
 Undefined symbols for architecture x86_64:
   "__ultoa", referenced from:
-      _main in cc3YI38P.o
+      _main in ccVJcSWV.o
 ld: symbol(s) not found for architecture x86_64
 collect2: error: ld returned 1 exit status
 configure:16558: $? = 1
@@ -1720,7 +1720,7 @@ configure:16558: checking for _i64toa
 configure:16558: gcc -o conftest -g -O2 -Iinclude -I/Users/Jason/Desktop/6.s096/final/6s096_nbody/third_party/SDL2/include   -Iinclude -I/Users/Jason/Desktop/6.s096/final/6s096_nbody/third_party/SDL2/include    conftest.c  >&5
 Undefined symbols for architecture x86_64:
   "__i64toa", referenced from:
-      _main in ccFmiHV3.o
+      _main in cc14GXVg.o
 ld: symbol(s) not found for architecture x86_64
 collect2: error: ld returned 1 exit status
 configure:16558: $? = 1
@@ -1833,7 +1833,7 @@ configure:16558: checking for _ui64toa
 configure:16558: gcc -o conftest -g -O2 -Iinclude -I/Users/Jason/Desktop/6.s096/final/6s096_nbody/third_party/SDL2/include   -Iinclude -I/Users/Jason/Desktop/6.s096/final/6s096_nbody/third_party/SDL2/include    conftest.c  >&5
 Undefined symbols for architecture x86_64:
   "__ui64toa", referenced from:
-      _main in ccgEjk8i.o
+      _main in cckqoJcI.o
 ld: symbol(s) not found for architecture x86_64
 collect2: error: ld returned 1 exit status
 configure:16558: $? = 1
@@ -1972,7 +1972,7 @@ configure:16558: checking for _stricmp
 configure:16558: gcc -o conftest -g -O2 -Iinclude -I/Users/Jason/Desktop/6.s096/final/6s096_nbody/third_party/SDL2/include   -Iinclude -I/Users/Jason/Desktop/6.s096/final/6s096_nbody/third_party/SDL2/include    conftest.c  >&5
 Undefined symbols for architecture x86_64:
   "__stricmp", referenced from:
-      _main in ccOBlxWK.o
+      _main in ccuI2c9k.o
 ld: symbol(s) not found for architecture x86_64
 collect2: error: ld returned 1 exit status
 configure:16558: $? = 1
@@ -2096,7 +2096,7 @@ configure:16558: checking for _strnicmp
 configure:16558: gcc -o conftest -g -O2 -Iinclude -I/Users/Jason/Desktop/6.s096/final/6s096_nbody/third_party/SDL2/include   -Iinclude -I/Users/Jason/Desktop/6.s096/final/6s096_nbody/third_party/SDL2/include    conftest.c  >&5
 Undefined symbols for architecture x86_64:
   "__strnicmp", referenced from:
-      _main in cc0VDT02.o
+      _main in ccTmZeO3.o
 ld: symbol(s) not found for architecture x86_64
 collect2: error: ld returned 1 exit status
 configure:16558: $? = 1
@@ -2240,7 +2240,7 @@ configure:16558: checking for fseeko64
 configure:16558: gcc -o conftest -g -O2 -Iinclude -I/Users/Jason/Desktop/6.s096/final/6s096_nbody/third_party/SDL2/include   -Iinclude -I/Users/Jason/Desktop/6.s096/final/6s096_nbody/third_party/SDL2/include    conftest.c  >&5
 Undefined symbols for architecture x86_64:
   "_fseeko64", referenced from:
-      _main in ccaP8PKJ.o
+      _main in ccuMRrdx.o
 ld: symbol(s) not found for architecture x86_64
 collect2: error: ld returned 1 exit status
 configure:16558: $? = 1
@@ -3810,7 +3810,7 @@ configure:21157: checking for sem_timedwait
 configure:21176: gcc -o conftest -g -O2 -Iinclude -I/Users/Jason/Desktop/6.s096/final/6s096_nbody/third_party/SDL2/include   -I/usr/X11R6/include -D_THREAD_SAFE  -Iinclude -I/Users/Jason/Desktop/6.s096/final/6s096_nbody/third_party/SDL2/include     -L/usr/X11R6/lib conftest.c  -lm -liconv  >&5
 Undefined symbols for architecture x86_64:
   "_sem_timedwait", referenced from:
-      _main in ccLfAMeQ.o
+      _main in ccLjKIuc.o
 ld: symbol(s) not found for architecture x86_64
 collect2: error: ld returned 1 exit status
 configure:21176: $? = 1
@@ -3961,7 +3961,7 @@ configure:21189: checking for pthread_spin_trylock
 configure:21209: gcc -o conftest -g -O2 -Iinclude -I/Users/Jason/Desktop/6.s096/final/6s096_nbody/third_party/SDL2/include   -I/usr/X11R6/include -D_THREAD_SAFE  -Iinclude -I/Users/Jason/Desktop/6.s096/final/6s096_nbody/third_party/SDL2/include     -L/usr/X11R6/lib conftest.c  -lm -liconv  >&5
 Undefined symbols for architecture x86_64:
   "_pthread_spin_trylock", referenced from:
-      _main in ccCviJYM.o
+      _main in ccuKDCVj.o
 ld: symbol(s) not found for architecture x86_64
 collect2: error: ld returned 1 exit status
 configure:21209: $? = 1
@@ -4256,7 +4256,7 @@ configure:21279: checking for pthread_set_name_np
 configure:21299: gcc -o conftest -g -O2 -Iinclude -I/Users/Jason/Desktop/6.s096/final/6s096_nbody/third_party/SDL2/include   -I/usr/X11R6/include -D_THREAD_SAFE  -Iinclude -I/Users/Jason/Desktop/6.s096/final/6s096_nbody/third_party/SDL2/include     -L/usr/X11R6/lib conftest.c  -lm -liconv  >&5
 Undefined symbols for architecture x86_64:
   "_pthread_set_name_np", referenced from:
-      _main in ccE9lIAY.o
+      _main in ccKd4LyU.o
 ld: symbol(s) not found for architecture x86_64
 collect2: error: ld returned 1 exit status
 configure:21299: $? = 1
@@ -4434,6 +4434,7 @@ config.status:1292: creating sdl2-config
 config.status:1292: creating SDL2.spec
 config.status:1292: creating sdl2.pc
 config.status:1292: creating include/SDL_config.h
+config.status:1452: include/SDL_config.h is unchanged
 config.status:1466: executing libtool commands
 
 ## ---------------- ##

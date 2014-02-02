@@ -25,6 +25,7 @@ namespace nbody {
     System( std::string filename ) : _nBodies{}, _body{nullptr}, _integrator{ new TrapIntegrator() } { readState( filename ); }
     ~System() { delete [] _body; }
     inline Body* getBodies() const { return _body; }
+    inline size_t nBodies() const { return _nBodies; }
     void interactBodies( size_t i, size_t j, float softFactor, Vector3f &acc ) const;
     void computeGravitation();
     void integrateSystem( float dt );

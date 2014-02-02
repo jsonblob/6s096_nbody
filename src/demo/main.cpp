@@ -27,16 +27,17 @@ int main() {
   glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 
   try {
-    std::ifstream input{ "resources/nbody/2d-binary-system-simple.txt" };
+    std::ifstream input{ "resources/nbody/2d-multiple-system-simple.txt" };
     nbody::Simulation sim{input};
-    for( int i = 0; i < 400; ++i ) {
+    nbody::System *system = sim.getSystem();
+    nbody::Body *bodies = system->getBodies();
+    size_t n = system->nBodies();
+    for( int i = 0; i < 300; ++i ) {
       std::cout << "==EVOLUTION " << i + 1 << "\n";
       sim.saveRun();
       sim.evolveSystem( 1e4, 0.000001 );
-      nbody::System *system = sim.getSystem();
-      nbody::Body *bodies = system->getBodies();
       (void)bodies;
-      for ( int j = 0; j < 2; j++ ) {
+      for ( size_t j = 0; j < n; j++ ) {
           std::cout << bodies[j].position() << "\n";
           vertices[0] = vertices[1];
           vertices[1] = vertices[2];

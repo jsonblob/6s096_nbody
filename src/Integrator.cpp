@@ -1,5 +1,6 @@
 #include <nbody/Integrator.h>
 #include <nbody/Vector3.h>
+#include <iostream>
 
 namespace nbody {
 
@@ -26,9 +27,9 @@ namespace nbody {
       v = body[i].velocity();
       a = body[i].force();
 
-      v = dt * ( v + ( v + a * dt ) ) / 2.0f;
+      v = ( v + ( v + a * dt ) ) / 2.0f;
       v = v * dampingFactor;
-      r = dt * ( r + ( r + v * dt ) ) / 2.0f;
+      r = ( r + ( r + v * dt ) ) / 2.0f;
 
       body[i].position() = r;
       body[i].velocity() = v;

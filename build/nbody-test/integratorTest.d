@@ -1,5 +1,5 @@
-integratorTest.o build/nbody-test/integratorTest.d : test/integratorTest.cpp install/include/nbody/Vector3.h \
- install/include/nbody/Integrator.h install/include/nbody/Body.h \
+integratorTest.o build/nbody-test/integratorTest.d : test/integratorTest.cpp include/nbody/Vector3.h \
+ include/nbody/Integrator.h include/nbody/Body.h \
  third_party/gtest/include/gtest/gtest.h \
  third_party/gtest/include/gtest/internal/gtest-internal.h \
  third_party/gtest/include/gtest/internal/gtest-port.h \

@@ -20,10 +20,11 @@ namespace nbody {
     System( const System &sys ) = delete;
     System& operator=( const System &sys ) = delete;
   public:
-    System( size_t N ) : _nBodies{N}, _body{ new Body[N] }, _integrator{ new BasicIntegrator() } { initRandomState(); }
-    System( std::istream &input ) : _nBodies{}, _body{nullptr}, _integrator{ new BasicIntegrator() } { readState( input ); }
-    System( std::string filename ) : _nBodies{}, _body{nullptr}, _integrator{ new BasicIntegrator() } { readState( filename ); }
+    System( size_t N ) : _nBodies{N}, _body{ new Body[N] }, _integrator{ new TrapIntegrator() } { initRandomState(); }
+    System( std::istream &input ) : _nBodies{}, _body{nullptr}, _integrator{ new TrapIntegrator() } { readState( input ); }
+    System( std::string filename ) : _nBodies{}, _body{nullptr}, _integrator{ new TrapIntegrator() } { readState( filename ); }
     ~System() { delete [] _body; }
+    inline Body* getBodies() const { return _body; }
     void interactBodies( size_t i, size_t j, float softFactor, Vector3f &acc ) const;
     void computeGravitation();
     void integrateSystem( float dt );

@@ -33,7 +33,6 @@ MKDIR := mkdir -p
 
 ## Directories to include headers from
 INCLUDE_FLAGS := -I$(INSTALL_DIR)/include \
-								 -I$(SDL2_DIR)/include \
 								 -I$(GLEW_DIR)/include \
 								 -I$(GTEST_DIR)/include \
 								 -I$(GTEST_DIR)
@@ -45,7 +44,7 @@ CFLAGS := -std=c99 $(FLAGS)
 # Use the C++11 standard and warn on violations of Meyers' "Effective C++"
 CXXFLAGS := -std=c++11 -Weffc++ $(FLAGS)
 # Flags for the linker; link to math and pthread (required for gtest)
-LDFLAGS := -L$(INSTALL_DIR)/lib -L$(GTEST_DIR) $(SDL2_DIR)/SDL2.a $(GLEW_DIR)/lib/libGLEW.1.7.0.dylib -lm -lpthread -framework OpenGL
+LDFLAGS := -L$(INSTALL_DIR)/lib -L$(GTEST_DIR) $(GLEW_DIR)/lib/libGLEW.1.7.0.dylib -lm -lpthread -framework SDL2 -framework OpenGL
 
 ## Turn on debugging symbols and disable optimizations when running 'make'
 DEBUG_FLAGS := -g -O0 -D _DEBUG
